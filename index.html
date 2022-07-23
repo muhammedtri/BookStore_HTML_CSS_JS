@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Book Store</h3>
+            <button id="createBook">
+                <i class="fa-solid fa-plus"></i>
+                Add New Book
+            </button>
+        </div>
+        <div class="bookFields">
+            <input type="text" placeholder="Title" id="title">
+            <input type="text" placeholder="Author" id="author">
+            <input type="text" placeholder="Publisher" id="publisher">
+            <input type="text" placeholder="Genre" id="genre">
+            <input type="number" placeholder="Price" id="price">
+            <button class="submit">Create</button>
+        </div>
+
+        <!-- Search Section -->
+        <div class="searchSection">
+            <input id="searchField" type="text" placeholder="Search ...">
+            <div class="searchBtns">
+                <button class="searchByCategory">Search By Category</button>
+                <button class="searchByTitle">Search By Title</button>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Genre</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Showing <span>5</span> Entries</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button onclick="deleteAll()" class="clearAll">Clear All Data</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
